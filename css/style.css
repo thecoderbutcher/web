@@ -1,0 +1,128 @@
+/*
+ * Main style 
+ */
+
+*{
+    padding: 0;
+    margin: 0;
+} 
+a{
+	text-decoration: none;
+}  
+ul li{
+	display: inline-block;
+	list-style: none;
+}
+body{ 
+    background-color: azure;
+    color: #424242;
+    display: grid;
+    font-family: "Mohave";   
+}
+.container{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);     
+    margin: 0 auto;
+    margin-top:55px;
+	max-width: 1440px;
+	width: 96% !important;
+}
+ /*
+ * Menu style 
+ */
+#menu{ 
+    background: rgba(0,0,0,0.9);
+    height: 50px; 
+    
+    position: fixed;
+    vertical-align: top;
+    width: 100%;
+    z-index: 100;
+}
+#menu ul{
+    margin-right: 30px;
+    float: right;
+}
+#menu ul li{   
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}   
+#menu a{
+    color: white;   
+    font-size: 1.2rem;
+}
+#menu a:hover{  
+    color: rgb(255, 145, 0);  
+    font-size: 1.4rem;
+    transition: 300ms;
+}
+/*
+ * Home style 
+ */ 
+#home{
+    background: url(../media/images/background.jpg) no-repeat ;
+    background-size: cover;
+    height: 500px;
+}
+#info-group{
+    padding: 6.5% 0 0 6.5%;
+}
+#home img{
+    vertical-align:  top;
+    border: 2px solid #f38b03;
+    border-radius: 50%;
+    display: inline-block; 
+    margin:auto;
+    width: 150px;
+}
+#home #title-profile{  
+    display: inline-block;
+    margin: 25px 0 0 5px; 
+}
+#home #my-name{
+    font-size: 38px;
+}
+#home #my-profesion{
+    font-size: 26px;
+    margin: 2px 0 3px 0;
+}
+#about-me{
+    font-size: 18px;
+    height: 250px;
+    margin-top: 5.5%;
+    padding-right: 10px;
+    text-align: center;
+
+}
+/*
+ * Contact style 
+ */ 
+
+/*
+ * Footer style 
+ */
+ footer{
+	margin-left: 5%;
+	padding: 2% 0;
+	width: 90%;
+}
+
+#footer-information, #footer-icons{
+	display: inline-block;
+	max-width: 1440px;
+    text-align: center;
+	vertical-align: top;
+	width: 100%
+}
+
+#footer-information li{
+	margin: 1px;
+}
+
+.footer-li{
+	font-size: 14px;
+} 
+
+.material-icons{
+	font-size: 12px !important;
+}
