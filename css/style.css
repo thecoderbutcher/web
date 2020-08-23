@@ -18,13 +18,27 @@ body{
     color: #424242;
     display: grid;
     font-family: "Mohave";   
+    transition: 500ms;
+    
 }
 .container{
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);     
     margin: 0 auto;
     margin-top:55px;
-	max-width: 1440px;
+    max-width: 1440px; 
 	width: 96% !important;
+}
+#home, #personal, #jobs, #knowledge, #projects, #contact{
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	margin: 0 auto;
+	max-width: 1440px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100% !important;
 }
  /*
  * Menu style 
@@ -32,7 +46,6 @@ body{
 #menu{ 
     background: rgba(0,0,0,0.9);
     height: 50px; 
-    
     position: fixed;
     vertical-align: top;
     width: 100%;
@@ -60,16 +73,17 @@ body{
  * Home style 
  */ 
 #home{
-    background: url(../media/images/background.jpg) no-repeat ;
-    background-size: cover;
-    height: 500px;
+    background-image: url(../media/images/background.jpg);
+    background-size: cover; height: 700px !important; 
+    text-shadow: 2px 2px 3px #747474;
 }
 #info-group{
-    padding: 6.5% 0 0 6.5%;
+    padding: 7% 0 0 7%;
 }
 #home img{
-    vertical-align:  top;
+    vertical-align: top;
     border: 2px solid #f38b03;
+    box-shadow: 3px 3px 5px #747474;;
     border-radius: 50%;
     display: inline-block; 
     margin:auto;
@@ -77,26 +91,63 @@ body{
 }
 #home #title-profile{  
     display: inline-block;
-    margin: 25px 0 0 5px; 
+    margin: 20px 0 0 5px; 
 }
 #home #my-name{
-    font-size: 38px;
+    font-size: 40px; 
 }
 #home #my-profesion{
-    font-size: 26px;
+    font-size: 28px; 
     margin: 2px 0 3px 0;
 }
-#about-me{
+#home cite{
     font-size: 18px;
+}
+#about-me{ 
+    font-size: 20px;
     height: 250px;
-    margin-top: 5.5%;
+    margin-top: 6.8%;
     padding-right: 10px;
     text-align: center;
-
 }
 /*
  * Contact style 
  */ 
+ #contact{
+    background-image: url(../media/images/news-background.jpeg);
+    height: 800px;
+	margin: 0 auto;
+	max-width: 1440px;
+ }
+ #galery-text{
+    color: #424242;
+    font-size: 24px;
+    margin: 5% 0;
+    text-align: center;
+}
+ form{
+	background-color: rgba(0,0,0,0.3);
+    border-radius: 10px 10px; 
+    margin-left: 25%; 
+	margin-bottom: 10%;
+	vertical-align: top;
+	width: 50%;
+}
+.form-group{
+	display: inline-block;
+	margin: 1% 0 1% 25%;
+	width: 60%;
+}
+.form-group input, .form-group textarea, .form-group select{
+	border-radius: 5px 5px;
+	padding: 1%;
+	width: 80%;	
+}
+.form-group input, .form-group textarea, .form-group label{
+    display: inline-block;
+    resize: none;
+}
+
 
 /*
  * Footer style 

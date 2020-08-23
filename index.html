@@ -50,16 +50,30 @@
             <section id="projects">
             </section>
 
-            <section id="contact">
-                <form action="" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="who you are" required>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Where can i answer you" required>
-                    <label for="comment">Commnet</label>
-                    <textarea id="comment" cols="30" rows="10" placeholder="Something you want to tell me"></textarea>
-
-                </form>
+            <section id="contact"> 
+                <div id="galery-text">
+                    <h1>Contact me</h1>
+                    <span>I will answer all your questions and concerns.</span>
+                </div>
+                <form method="post" id="form-contact">
+                    <div class="form-group">
+                       <label for="name"><label class="material-icons">person</label> Name</label><br>
+                       <input class="nameinput" type="text" name="name" placeholder="Who you are" required>
+                       <i class="material-icons" id="name-valid" style="display: none"></i>
+                   </div>
+                   <div class="form-group">
+                       <label for="mail"><label class="material-icons">mail</label> Email</label><br>
+                       <input class="emailinput" type="email" name="mail" placeholder="Where can i answer you" required>
+                       <i class="material-icons" id="email-valid" style="display: none"></i>
+                   </div>
+                   <div class="form-group">
+                       <label for="coments"><label class="material-icons">comment</label> Comments</label><br>
+                       <textarea name="coments" placeholder="Something you want to tell me"></textarea>
+                   </div>	
+                   <div class="form-group">
+                       <input type="submit" name="Send">
+                   </div>			
+               </form>
             </section>
         </div>
         <footer>
