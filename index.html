@@ -5,59 +5,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="media/icons/favicon.png">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Ignacio Morinigo - Page</title>
+        <title>Ignacio Morinigo - Web</title>
     </head>
-    <body> 
-        <nav id="menu">   
-            <ul> 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#personal">Who I'm</a></li>
-                <li><a href="#jobs">Experience</a></li>
-                <li><a href="#knowledge">Knowledge</a></li> 
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top " id="principal-menu">
+            <a class="navbar-brand" href="#"><img src="media/icons/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#personal">Who I'm</a>
+                    <a class="nav-link" href="#jobs">Experience</a>
+                    <a class="nav-link" href="#knowledge">Knowledge</a> 
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a> 
+                </div>
+            </div>
         </nav> 
-        <div class="container">             
-            <section id="home">  
-                <div id="title-profile">
-                    <p id="my-name">Ignacio Morinigo</p>
-                    <p id="my-profesion">Frontend - Backend Web Developer</p>
-                    <cite>Design the future by developing the present.</cite>
-                </div> 
-            </section>
+        <section id="home">  
+            <div id="title-profile">
+                <p id="my-name">Ignacio Morinigo</p>
+                <p id="my-profesion">Frontend - Backend Web Developer</p>
+                <cite>Design the future by developing the present.</cite>
+            </div> 
+        </section>
+        <section id="personal">
+            <div id="galery-text">
+                <h1>Who I'm</h1>
+                <span>Know more about me</span>
+            </div>
+            <hr>
+            <div>
+                <img src="media/images/profile.png" alt="profile">
+                <div id="personal-data">
+                    <p>Ismael Ignacio Morinigo, 32 years old - Argentinian</p>
+                </div>
+            </div> 
+            <div id="about-me"> 
+                <p>I'm a constantly growing <b>web developer</b>, passionate about <b>graphic design</b>, pizza lover and an <b>information systems engineer</b> in process.</p>
+            </div>
+        </section>
+        <section id="jobs">
+            <div id="galery-text">
+                <h1>My jobs experience</h1>
+                <span>I will answer all your questions and concerns.</span> 
+            </div>
+            <hr>
+            <div>
 
-            <section id="personal">
-                <div id="galery-text">
-                    <h1>Who I'm</h1>
-                    <span>Know more about me</span>
-                </div>
-                    <img src="media/images/profile.png" alt="profile">
-                    <div id="personal-data">
-                        <p>Ismael Ignacio Morinigo, 32 years old - Argentinian</p>
-                    </div>
-                <div id="about-me"> 
-                    <p>I'm a constantly growing <b>web developer</b>, passionate about <b>graphic design</b>, pizza lover and an <b>information systems engineer</b> in process.</p>
-                </div>
-            </section>
-
-            <section id="jobs">
-                <div id="galery-text">
-                    <h1>My jobs experience</h1>
-                    <span>I will answer all your questions and concerns.</span>
-                </div>
-            </section>
-
-            <section id="knowledge"> 
-                <div id="galery-text">
-                    <h1>My knowledge</h1>
-                    <span>Review my academic education and technical skills</span>
-                </div>
-                <div id="technikal-skills">
-                    <h2>Technical skills</h2>
-                    <div id="web">
+            </div>
+        </section>
+        <section id="knowledge"> 
+            <div id="galery-text">
+                <h1>My knowledge</h1>
+                <span>Review my academic education and technical skills</span>
+            </div> 
+            <hr>
+            <div id="technikal-skills" class="container">
+                <h2>Technical skills</h2>
+                <div class="row"> 
+                    <div id="web" class="col-sm-12 col-md-6 col-lg-3">
                         <h3>Web development</h3>
                         <div class="skill">
                             <img src="media/icons/icons8-html-5-30.png" alt="html5">
@@ -103,9 +115,8 @@
                             <img src="media/icons/icons8-graphql-30.png" alt="firebase">
                             <progress value="5" max="100"> 5% </progress>
                         </div> 
-                        
                     </div>
-                    <div id="desktop">
+                    <div id="desktop" class="col-sm-12 col-md-6 col-lg-3">
                         <h3>Desktop development</h3>
                         <div class="skill">
                             <img src="media/icons/icons8-c-programming-30.png" alt="c">
@@ -132,18 +143,7 @@
                             <progress value="10" max="100"> 10% </progress>
                         </div> 
                     </div>
-                    <div id="mobile">
-                        <h3>Mobile development</h3>
-                        <div class="skill">
-                            <img src="media/icons/icons8-kotlin-30.png" alt="kotlin">
-                            <progress value="10" max="100"> 10% </progress>
-                        </div>   
-                        <div class="skill">
-                            <img src="media/icons/icons8-flutter-30.png" alt="flutter">
-                            <progress value="8" max="100"> 8% </progress>
-                        </div> 
-                    </div>
-                    <div id="design">
+                    <div id="design" class="col-sm-12 col-md-6 col-lg-3">
                         <h3>Graphic design</h3>
                         <div class="skill">
                             <img src="media/icons/icons8-adobe-illustrator-30.png" alt="illustrator">
@@ -162,7 +162,7 @@
                             <progress value="45" max="100"> 45% </progress>
                         </div>    
                     </div>
-                    <div id="otherskills">
+                    <div id="otherskills" class="col-sm-12 col-md-6 col-lg-3">
                         <h3>Other skills</h3>
                         <div class="skill">
                             <img src="media/icons/icons8-git-30.png" alt="git">
@@ -189,10 +189,25 @@
                             <progress value="5" max="100"> 35% </progress>
                         </div>    
                     </div>
+                    <!--
+                    <div id="mobile" class="col-sm-12">
+                        <h3>Mobile development</h3>
+                        <div class="skill">
+                            <img src="media/icons/icons8-kotlin-30.png" alt="kotlin">
+                            <progress value="10" max="100"> 10% </progress>
+                        </div>   
+                        <div class="skill">
+                            <img src="media/icons/icons8-flutter-30.png" alt="flutter">
+                            <progress value="8" max="100"> 8% </progress>
+                        </div> 
+                    </div>
+                    -->
                 </div>
-                <div id="academic">
-                    <h2>Academic education</h2>
-                    <div id="university">
+            </div>
+            <div id="academic" class="container">
+                <h2>Academic education</h2>
+                <div class="row">
+                    <div id="university" class="col-sm-12 col-md-12 col-lg-4">
                         <h3>University studies</h3>
                         <div class="education">
                             <img src="media/icons/icons8-pdf-30.png" alt="certificate of completion"> 
@@ -207,11 +222,11 @@
                             <label for="">University systems programmer</label> 
                         </div>  
                     </div>
-                    <div id="courses">
+                    <div id="courses" class="col-sm-12 col-md-12 col-lg-4">
                         <h3>Courses</h3>
                         <div class="education">
                             <img src="media/icons/icons8-pdf-30.png" alt="certificate of completion">
-                            <label for="">Git + Github: A whole system of version control from scratch</label> 
+                            <label for="">Git + Github: A whole system of version control</label> 
                         </div>
                         <div class="education">
                             <img src="media/icons/icons8-pdf-30.png" alt="certificate of completion">
@@ -234,7 +249,7 @@
                             <label for="">Development based on software engineering concepts</label> 
                         </div>
                     </div>
-                    <div id="workshops">
+                    <div id="workshops" class="col-sm-12 col-md-12 col-lg-4">
                         <h3>Workshops</h3>
                         <div class="education">
                             <img src="media/icons/icons8-pdf-30.png" alt="certificate of completion">
@@ -245,59 +260,83 @@
                             <label for="">Tutorial on ethics and informatics</label> 
                         </div> 
                     </div>
-                </div>      
-            </section> 
-
-            <section id="projects">
-                <div id="galery-text">
-                    <h1>My project portfolio</h1>
-                    <span>I will answer all your questions and concerns.</span>
                 </div>
-            </section>
+               
+            </div>      
+        </section> 
 
-            <section id="contact"> 
-                <div id="galery-text">
-                    <h1>Contact me</h1>
-                    <span>I will answer all your questions and concerns.</span>
+        <section id="projects">
+            <div id="galery-text">
+                <h1>My project portfolio</h1>
+                <span>A sample of some of my personal work</span>
+            </div>
+            <hr>
+            <div>
+                <div id="web-project">
+                    <h3>Web development</h3> 
                 </div>
-                <form method="post" id="form-contact">
-                    <div class="form-group">
-                       <label for="name"><label class="material-icons">person</label> Name</label><br>
-                       <input class="nameinput" type="text" name="name" placeholder="Who you are" required>
-                       <i class="material-icons" id="name-valid" style="display: none"></i>
-                   </div>
-                   <div class="form-group">
-                       <label for="mail"><label class="material-icons">mail</label> Email</label><br>
-                       <input class="emailinput" type="email" name="mail" placeholder="Where can i answer you" required>
-                       <i class="material-icons" id="email-valid" style="display: none"></i>
-                   </div>
-                   <div class="form-group">
-                       <label for="coments"><label class="material-icons">comment</label> Comments</label><br>
-                       <textarea name="coments" placeholder="Something you want to tell me"></textarea>
-                   </div>	
-                   <div class="form-group">
-                       <input type="submit" name="Send">
-                   </div>			
-               </form>
-            </section>
+                <div id="desktop-project">
+                    <h3>Desktop development</h3>
+                    
+                </div> 
+                <div id="design-project">
+                    <h3>Graphic design</h3>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact"> 
+            <div id="galery-text">
+                <h1>Contact me</h1>
+                <span>I will answer all your questions and concerns.</span>
+            </div>
+            <hr> 
+
+            <form method="post" id="form-contact"> 
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text material-icons">person</div>
+                    </div>
+                    <input type="text" class="form-control" name="name" placeholder="Who you are" required>
+                    <i class="material-icons" id="name-valid" style="display: none"></i>
+                </div> 
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text material-icons">mail</div>
+                    </div>
+                    <input type="email" class="form-control" name="mail" placeholder="Where can i answer you" required>
+                    <i class="material-icons" id="name-valid" style="display: none"></i>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text material-icons">comment</div>
+                    </div>
+                    <textarea name="coments" class="form-control" placeholder="Something you want to tell me"></textarea>
+                    <i class="material-icons" id="name-valid" style="display: none"></i>
+                </div>	
+               <div class="form-group">
+                   <input type="submit" class="btn btn-dark" name="send" value="Send">
+               </div> 		
+           </form> 
+           <div id="footer-icons">
+            <a href="https://github.com/morinacho"><img src="media/icons/icons8-github-30.png" alt="github"></a>
+            <a href="https://www.facebook.com/morinacho"><img src="media/icons/icons8-facebook-30.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/dev.notes.mirai/"><img src="media/icons/icons8-instagram-30.png" alt="instagram"></a>
+            <a href="https://www.youtube.com/channel/UCLKkpOBSzm8sTbXCJhYv2jQ?view_as=subscriber"><img src="media/icons/icons8-youtube-30.png" alt="youtube"></a>
+            <a href="mailto:morinacho@gmail.com"><img src="media/icons/icons8-gmail-30.png" alt="whatsapp"></a>
+            <a href="https://wa.me/+542665035694"><img src="media/icons/icons8-whatsapp-30.png" alt="whatsapp"></a>
+            <a href="https://t.me/morinacho"><img src="media/icons/icons8-telegram-app-30.png" alt="telegram"></a>
         </div>
-        <footer>
-            <div id="footer-icons">
-                <a href="https://github.com/morinacho"><img src="media/icons/icons8-github-30.png" alt="github"></a>
-				<a href="https://www.facebook.com/morinacho"><img src="media/icons/icons8-facebook-30.png" alt="facebook"></a>
-				<a href="https://www.instagram.com/dev.notes.mirai/"><img src="media/icons/icons8-instagram-30.png" alt="instagram"></a>
-				<a href="https://www.youtube.com/channel/UCLKkpOBSzm8sTbXCJhYv2jQ?view_as=subscriber"><img src="media/icons/icons8-youtube-30.png" alt="youtube"></a>
-				<a href=""><img src="media/icons/icons8-whatsapp-30.png" alt="whatsapp"></a>
-				<a href=""><img src="media/icons/icons8-telegram-app-30.png" alt="telegram"></a>
-			</div>
-			<div id="footer-information">
-				<ul>
-					<li><span class="material-icons">smartphone</span><span class="footer-li"> +54 2665 035694</span></li>
-					<li><span class="material-icons">email</span><span class="footer-li"> morinacho@gmail.com</span></li>
-					<li><span class="material-icons">room</span><span class="footer-li"> Villa Mercedes, San Luis</span></li>
-				</ul>
-			</div>
-        </footer>
+        <div id="footer-information">
+            <ul> 
+                <li><span class="material-icons">room</span><span class="footer-li"> Villa Mercedes, San Luis</span></li>
+            </ul>
+        </div>
+        </section>
+    </div> 
     </body>
-    <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/script.js"></script> 
 </html>

@@ -16,6 +16,12 @@ ul li{
 	display: inline-block;
 	list-style: none;
 }
+hr{ 
+    display: inline-block !important;
+    margin: 0; 
+    width: 40%;
+}
+
 body{ 
     background-color: azure;
     color: #424242;
@@ -23,20 +29,13 @@ body{
     font-family: "Mohave";   
     transition: 500ms; 
 }
-.container{
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);     
-    margin: 0 auto; 
-    max-width: 1440px; 
-	width: 96% !important;
-}
+ 
 #home, #personal, #jobs, #knowledge, #projects, #contact{
     background-attachment: fixed;
 	background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: -5px 0px 5px #747474;
+    background-size: cover; 
 	height: 700px;
 	margin: 0 auto;
-	max-width: 1440px;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
@@ -45,13 +44,9 @@ body{
  /*
  * Menu style 
  */
-#menu{ 
-    background: rgba(0,0,0,0.9);
-    height: 50px; 
-    position: fixed;
-    vertical-align: top;
-    width: 100%;
-    z-index: 100;
+#principal-menu{ 
+    background: rgba(0,0,0,0.8) !important; 
+    padding: 1px 1rem !important;
 }
 #menu ul{
     margin-right: 30px;
@@ -115,8 +110,7 @@ body{
 }
 #about-me{ 
     font-size: 20px; 
-    margin-top: 2%;
-    text-align: center;
+    padding: 10px;
 }
 
 /*
@@ -124,30 +118,29 @@ body{
  */ 
 #jobs{
     background-image: url(../media/images/experience.jpeg);
-    color: red !important;
-}
-#jobs h1{
+    text-align: center;
+} 
+#jobs, #jobs h1, #jobs span{
     color: rgb(255, 255, 255) !important;
 }
+ 
 
  /*
  * Knowledge style 
  */
 #knowledge{
-    height: 950px;
-    text-align: center;  
-}
-#desktop, #web, #mobile, #otherskills, #design, #university, #courses, #workshops{
-    display: inline-block;
-    margin-right: 20px;
-    text-align: start;
-    vertical-align: top;
-}
-#academic img{
-    vertical-align: bottom;
-}
+    height: 102%;
+    margin-bottom: 50px;
+    text-align: center;      
+} 
 .education{
-    margin-bottom:4px;
+    text-align: initial !important; 
+}
+#courses, #workshops{
+    padding: 0 !important;
+}
+.education label{
+    display: unset !important;  
 }
 #technikal-skills h2, #academic h2{
     margin: 15px 0 15px 0;
@@ -155,14 +148,44 @@ body{
 #knowledge h3{
     margin-bottom: 8px;
 }
-progress{
-    vertical-align: super;
+.skill{
+    margin-bottom: 3px;
+}
+.skill img{
+    vertical-align: middle;
+} 
+progress{ 
+    background-color: #ececec; 
+    border: 0.2px #b4b4b4 solid; 
+    box-sizing: border-box; 
+    height: 9px;  
+    border-radius: 9px; 
+    color: #000000;
+}
+/* Safari Chrome */
+progress::-webkit-progress-bar{ 
+    background-color: #ececec;  
+    border-radius: 9px;
+}
+progress::-webkit-progress-value{ 
+    background: #1274ec; 
+     
+    border-radius: 9px 0 0 9px; 
+}
+/* firefox */
+progress::-moz-progress-bar{ 
+    background: #1274ec; 
+}
+.education img{
+    filter: grayscale(100%);
+
 }
 /*
  * Projects style 
  */ 
 #projects{
     background-image: url(../media/images/news-background.jpeg);
+    text-align: center;
 }
  /*
  * Contact style 
@@ -170,7 +193,8 @@ progress{
  #contact{
     height: 800px;
 	margin: 0 auto;
-	max-width: 1440px;
+    max-width: 1440px;
+    text-align: center;
  }
  #galery-text{
     color: #424242;
@@ -180,25 +204,9 @@ progress{
 }
  form{
 	background-color: rgba(0,0,0,0.3);
-    border-radius: 10px 10px; 
-    margin-left: 25%; 
-	margin-bottom: 10%;
+    border-radius: 10px 10px;  
 	vertical-align: top;
-	width: 50%;
-}
-.form-group{
-	display: inline-block;
-	margin: 1% 0 1% 25%;
-	width: 60%;
-}
-.form-group input, .form-group textarea, .form-group select{
-	border-radius: 5px 5px;
-	padding: 1%;
-	width: 80%;	
-}
-.form-group input, .form-group textarea, .form-group label{
-    display: inline-block;
-    resize: none;
+	width: 600px;
 }
 
 
@@ -224,9 +232,9 @@ progress{
 }
 
 .footer-li{
-	font-size: 14px;
+	font-size: 18px;
 } 
 
 .material-icons{
-	font-size: 12px !important;
-}
+	font-size: 16px !important;
+} 
