@@ -118,6 +118,7 @@ body{
  */ 
 #jobs{
     background-image: url(../media/images/experience.jpeg);
+    height: 100%;
     text-align: center;
 } 
 #jobs, #jobs h1, #jobs span{
@@ -129,7 +130,7 @@ body{
  * Knowledge style 
  */
 #knowledge{
-    height: 102%;
+    height: 100%;
     margin-bottom: 50px;
     text-align: center;      
 } 
