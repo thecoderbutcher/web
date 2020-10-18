@@ -95,6 +95,7 @@ body{
  * Personal style 
  */  
 #personal{
+    height: 100%;
     text-align: center;
 }
 #personal img{
@@ -187,13 +188,13 @@ progress::-moz-progress-bar{
 #projects{
     background-image: url(../media/images/news-background.jpeg);
     text-align: center;
-    height: 1200px;
+    height: 100%;
 }
  /*
  * Contact style 
  */ 
  #contact{
-    height: 800px;
+    height: 100%;
 	margin: 0 auto;
     max-width: 1440px;
     text-align: center;
