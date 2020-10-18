@@ -186,6 +186,7 @@ progress::-moz-progress-bar{
 #projects{
     background-image: url(../media/images/news-background.jpeg);
     text-align: center;
+    height: 1200px;
 }
  /*
  * Contact style 
@@ -201,34 +202,6 @@ progress::-moz-progress-bar{
     font-size: 24px;
     margin-top: 3.6%;
     text-align: center;
-}
- form{
-	background-color: rgba(0,0,0,0.3);
-    border-radius: 10px 10px;  
-	vertical-align: top;
-	width: 600px;
-}
-
-
-/*
- * Footer style 
- */
- footer{
-	margin-left: 5%;
-	padding: 2% 0;
-	width: 90%;
-}
-
-#footer-information, #footer-icons{
-	display: inline-block;
-	max-width: 1440px;
-    text-align: center;
-	vertical-align: top;
-	width: 100%
-}
-
-#footer-information li{
-	margin: 1px;
 }
 
 .footer-li{
